@@ -1,5 +1,11 @@
 # desktop-view
 
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![AgentSkills](https://img.shields.io/badge/AgentSkills-Standard-green)
+![Windows](https://img.shields.io/badge/Windows-PowerShell-5391FE)
+
+English | [简体中文](README.zh-CN.md)
+
 A [pi](https://github.com/earendil-works/pi) skill that lets the agent **see a Windows desktop
 over ssh** — list the open windows, or capture one window's pixels — instead of asking you
 to take a screenshot.
@@ -32,8 +38,10 @@ replace it, and the agent can iterate on pixel-exact results by itself.
 Clone into your pi skills directory:
 
 ```bash
-git clone <this repo> ~/.pi/agent/skills/desktop-view
+./install.sh desktop-view      # from the pi-skills repo root
 ```
+
+To install by hand, copy this directory into `~/.pi/agent/skills/desktop-view`.
 
 The skill directory name must match the `name` in `SKILL.md` (`desktop-view`). Pi scans the
 skills directory at startup, so a **new session** is needed before it is offered; you can

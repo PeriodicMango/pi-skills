@@ -1,5 +1,9 @@
 # pi-skills
 
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![AgentSkills](https://img.shields.io/badge/AgentSkills-Standard-green)
+![pi](https://img.shields.io/badge/pi-coding--agent-blueviolet)
+
 English | [简体中文](README.zh-CN.md)
 
 Agent skills for [pi](https://github.com/earendil-works/pi) (pi-coding-agent / pi-web),

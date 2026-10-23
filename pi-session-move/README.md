@@ -1,5 +1,11 @@
 # pi-session-move
 
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![AgentSkills](https://img.shields.io/badge/AgentSkills-Standard-green)
+![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB)
+
+English | [简体中文](README.zh-CN.md)
+
 Move a pi session to a different project folder — properly.
 
 pi stores sessions under `~/.pi/agent/sessions/--<encoded-cwd>--/`, and the project a

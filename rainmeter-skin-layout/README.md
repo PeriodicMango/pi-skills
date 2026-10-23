@@ -1,5 +1,11 @@
 # rainmeter-skin-layout
 
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![AgentSkills](https://img.shields.io/badge/AgentSkills-Standard-green)
+![Rainmeter](https://img.shields.io/badge/Rainmeter-skin-orange)
+
+English | [简体中文](README.zh-CN.md)
+
 A [pi](https://github.com/earendil-works/pi) skill for building and reshaping **data-driven
 Rainmeter skins** — the kind whose content comes from an API or a file (a calendar, a task
 list, a timeline) rather than being fixed at author time.
@@ -21,8 +27,10 @@ encoding requirement that mangles every glyph if you get it wrong.
 ## Install
 
 ```bash
-git clone <this repo> ~/.pi/agent/skills/rainmeter-skin-layout
+./install.sh rainmeter-skin-layout   # from the pi-skills repo root
 ```
+
+To install by hand, copy this directory into `~/.pi/agent/skills/rainmeter-skin-layout`.
 
 Pi scans its skills directory at startup, so a **new session** picks it up; you can also
 force it with `/skill:rainmeter-skin-layout`. Nothing else to configure — the skill is
