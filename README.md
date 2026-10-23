@@ -1,5 +1,7 @@
 # pi-skills
 
+English | [简体中文](README.zh-CN.md)
+
 Agent skills for [pi](https://github.com/earendil-works/pi) (pi-coding-agent / pi-web),
 dropped into `~/.pi/agent/skills/`.
 
