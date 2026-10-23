@@ -1,0 +1,31 @@
+# Configuration for winshot.sh
+#
+# Copy this file to ~/.config/pi-desktop-view/config (recommended, survives skill
+# reinstallation) or to config next to scripts/winshot.sh, then fill in WIN_SSH_TARGET and
+# WIN_TMP. Keep the copy out of version control - it names your machine.
+
+# The ssh target that reaches your Windows host.
+#   user@hostname            or an alias from ~/.ssh/config
+# Examples:
+#   WIN_SSH_TARGET=me@192.168.1.20
+#   WIN_SSH_TARGET=windows-box
+WIN_SSH_TARGET=
+
+# A temp directory on the Windows side, where win_shot.ps1 is uploaded and the PNG is
+# written. Give it in EITHER form; the other is derived.
+#   Windows form:  C:/Users/you/AppData/Local/Temp
+#   Shell form:    /mnt/c/Users/you/AppData/Local/Temp     (the WSL convention)
+WIN_TMP=
+
+# Private key for that target. Leave unset to let ssh pick its own default.
+# WIN_SSH_KEY=~/.ssh/id_ed25519
+
+# PowerShell as the far side sees it. The default suits a WSL target.
+# WIN_POWERSHELL=/mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe
+
+# If the far side mounts the Windows drives somewhere other than /mnt/<letter>, say where.
+# WIN_TMP_SHELL=/c/Users/you/AppData/Local/Temp
+
+# Extra ssh options, word-split. Defaults to
+# -o StrictHostKeyChecking=accept-new -o ConnectTimeout=8
+# WIN_SSH_OPTS=-o ConnectTimeout=5

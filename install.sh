@@ -26,7 +26,7 @@ list_skills() {
   for d in "$repo_dir"/*/; do
     name="$(basename "$d")"
     [ -f "$d/SKILL.md" ] || continue
-    desc="$(sed -n 's/^description: //p' "$d/SKILL.md" | head -1 | cut -c1-100)"
+    desc="$(sed -n 's/^description: //p' "$d/SKILL.md" | head -1 | sed 's/^"//; s/"$//' | cut -c1-100)"
     printf '  %-24s %s\n' "$name" "$desc"
   done
 }

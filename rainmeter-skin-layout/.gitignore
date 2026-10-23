@@ -1,0 +1,6 @@
+# Generated output - regenerate with layout.py, do not commit or hand-edit.
+examples/minimal/Minimal.ini
+
+# Python
+__pycache__/
+*.pyc

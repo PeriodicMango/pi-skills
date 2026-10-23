@@ -29,6 +29,8 @@ Restart nothing. pi picks skills up on the next session.
 | Skill | What it does |
 |---|---|
 | [`pi-session-move`](pi-session-move/) | Move session transcripts between project directories: rewrites the session header `cwd`, the system-prompt `cwd`, `parentSession` links for subagent sessions, and the pi-web session index. |
+| [`desktop-view`](desktop-view/) | See a remote Windows host over ssh: list open windows (title, class, position, size) or capture a single window's own pixels via `PrintWindow`, so occlusion and off-screen placement do not matter. |
+| [`rainmeter-skin-layout`](rainmeter-skin-layout/) | Build and restyle data-driven Rainmeter skins safely: generate the `.ini` from a constant table instead of hand-editing, keep pixel arithmetic in a backend, and verify with a checker plus a window capture. |
 
 Each skill directory is self-contained (`SKILL.md` + scripts) and is the source of
 truth for its own docs — start there, or read the per-skill `README.md` for the
@@ -43,7 +45,8 @@ pi-skills/
 └── <skill-name>/
     ├── SKILL.md            # agent-facing: frontmatter + full usage instructions
     ├── README.md           # human-facing: what it is, why, quick start
-    └── scripts/            # optional helpers
+    ├── scripts/            # optional helpers
+    └── examples/           # optional, when the skill ships runnable samples
 ```
 
 The folder name must equal the `name` field in `SKILL.md` frontmatter.

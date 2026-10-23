@@ -1,0 +1,7 @@
+# Local configuration: names your machine, keep it out of the repo.
+config
+
+# Captures and scratch output.
+*.png
+!docs/*.png
+out/
