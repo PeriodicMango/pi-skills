@@ -1,6 +1,6 @@
 # pi-skills
 
-Agent skills for [pi](https://github.com/earendil-works/pi-coding-agent) (pi-coding-agent / pi-web),
+Agent skills for [pi](https://github.com/earendil-works/pi) (pi-coding-agent / pi-web),
 dropped into `~/.pi/agent/skills/`.
 
 A skill is a folder with a `SKILL.md` the agent reads on demand — its `description`
@@ -13,9 +13,11 @@ step, no runtime.
 git clone https://github.com/PeriodicMango/pi-skills.git
 cd pi-skills
 
-./install.sh --list                  # what's available
-./install.sh pi-session-move         # copy into ~/.pi/agent/skills/
-./install.sh pi-session-move --link  # symlink instead (edit the repo, agent sees it)
+./install.sh --list                       # what's available
+./install.sh pi-session-move              # one skill
+./install.sh desktop-view rainmeter-skin-layout   # several at once
+./install.sh --all                        # everything
+./install.sh pi-session-move --link       # symlink instead (edit the repo, agent sees it)
 ```
 
 `--dest DIR` installs somewhere other than `~/.pi/agent/skills/`. Copy mode is the

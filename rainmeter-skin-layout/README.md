@@ -1,6 +1,6 @@
 # rainmeter-skin-layout
 
-A [pi](https://github.com/badlogic/pi) skill for building and reshaping **data-driven
+A [pi](https://github.com/earendil-works/pi) skill for building and reshaping **data-driven
 Rainmeter skins** — the kind whose content comes from an API or a file (a calendar, a task
 list, a timeline) rather than being fixed at author time.
 

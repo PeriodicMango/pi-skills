@@ -12,6 +12,10 @@ and leaves the session index pointing at paths that no longer exist.
 This skill does all four parts in one command, and keeps the index consistent without
 restarting the web UI.
 
+Compatible with both the **pi CLI** and **pi-web**: the session-index handling targets
+pi-web's cache, and the tool never restarts the web service (that would kill a live
+session — see below).
+
 ## Quick start
 
 ```bash
@@ -61,4 +65,4 @@ Python 3.8+, POSIX paths, `pi` / `pi-web` session layout (tested against
 
 ## License
 
-MIT — see [../LICENSE](../LICENSE).
+MIT — see [LICENSE](LICENSE).

@@ -1,6 +1,6 @@
 # desktop-view
 
-A [pi](https://github.com/badlogic/pi) skill that lets the agent **see a Windows desktop
+A [pi](https://github.com/earendil-works/pi) skill that lets the agent **see a Windows desktop
 over ssh** — list the open windows, or capture one window's pixels — instead of asking you
 to take a screenshot.
 
